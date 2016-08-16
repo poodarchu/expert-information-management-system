@@ -1,1 +1,2 @@
-the **expert manager system**.
+the 
+  **expert information manage system**.
