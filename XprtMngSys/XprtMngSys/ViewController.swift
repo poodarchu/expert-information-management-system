@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  ExpertMngr
+//  XprtMngSys
 //
-//  Created by P. Chu on 7/29/16.
-//  Copyright © 2016 P. Chu. All rights reserved.
+//  Created by P. Chu on 8/16/16.
+//  Copyright © 2016 PDC. All rights reserved.
 //
 
 import Cocoa
