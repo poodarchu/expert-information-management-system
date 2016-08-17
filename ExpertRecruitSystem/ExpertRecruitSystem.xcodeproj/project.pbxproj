@@ -18,7 +18,7 @@
 		552AD78B1D6464B00050E849 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD78A1D6464B00050E849 /* AuthViewController.swift */; };
 		552AD78F1D6465D00050E849 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD78E1D6465D00050E849 /* User.swift */; };
 		552AD7911D646CF60050E849 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7901D646CF60050E849 /* UserCell.swift */; };
-		552AD7931D6484F90050E849 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7921D6484F90050E849 /* AdminViewController.swift */; };
+		552AD7951D6489B80050E849 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7941D6489B80050E849 /* AdminViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		552AD78A1D6464B00050E849 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		552AD78E1D6465D00050E849 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		552AD7901D646CF60050E849 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
-		552AD7921D6484F90050E849 /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdminViewController.swift; path = ../AdminViewController.swift; sourceTree = "<group>"; };
+		552AD7941D6489B80050E849 /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		6436439E44AF83AF1E7BF51A /* Pods-ExpertRecruitSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpertRecruitSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpertRecruitSystem/Pods-ExpertRecruitSystem.release.xcconfig"; sourceTree = "<group>"; };
 		F2624133CA386C23FB8E8430 /* Pods_ExpertRecruitSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpertRecruitSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,7 +90,7 @@
 		552AD70E1D6437F10050E849 /* ExpertRecruitSystem */ = {
 			isa = PBXGroup;
 			children = (
-				552AD7921D6484F90050E849 /* AdminViewController.swift */,
+				552AD7941D6489B80050E849 /* AdminViewController.swift */,
 				552AD70F1D6437F10050E849 /* AppDelegate.swift */,
 				552AD7111D6437F10050E849 /* MenuViewController.swift */,
 				552AD7901D646CF60050E849 /* UserCell.swift */,
@@ -234,7 +234,7 @@
 				552AD7121D6437F10050E849 /* MenuViewController.swift in Sources */,
 				552AD7911D646CF60050E849 /* UserCell.swift in Sources */,
 				552AD78F1D6465D00050E849 /* User.swift in Sources */,
-				552AD7931D6484F90050E849 /* AdminViewController.swift in Sources */,
+				552AD7951D6489B80050E849 /* AdminViewController.swift in Sources */,
 				552AD7181D6437F10050E849 /* ExpertRecruitSystem.xcdatamodeld in Sources */,
 				552AD7101D6437F10050E849 /* AppDelegate.swift in Sources */,
 			);
