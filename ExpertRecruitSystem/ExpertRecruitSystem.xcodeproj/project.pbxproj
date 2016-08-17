@@ -19,6 +19,7 @@
 		552AD78F1D6465D00050E849 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD78E1D6465D00050E849 /* User.swift */; };
 		552AD7911D646CF60050E849 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7901D646CF60050E849 /* UserCell.swift */; };
 		552AD7951D6489B80050E849 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7941D6489B80050E849 /* AdminViewController.swift */; };
+		552AD79C1D648B8D0050E849 /* SSASideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD79B1D648B8D0050E849 /* SSASideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		552AD78E1D6465D00050E849 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		552AD7901D646CF60050E849 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		552AD7941D6489B80050E849 /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		552AD79B1D648B8D0050E849 /* SSASideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSASideMenu.swift; sourceTree = "<group>"; };
 		6436439E44AF83AF1E7BF51A /* Pods-ExpertRecruitSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpertRecruitSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpertRecruitSystem/Pods-ExpertRecruitSystem.release.xcconfig"; sourceTree = "<group>"; };
 		F2624133CA386C23FB8E8430 /* Pods_ExpertRecruitSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpertRecruitSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,20 +92,45 @@
 		552AD70E1D6437F10050E849 /* ExpertRecruitSystem */ = {
 			isa = PBXGroup;
 			children = (
-				552AD7941D6489B80050E849 /* AdminViewController.swift */,
+				552AD7961D6489FB0050E849 /* Controllers */,
+				552AD7981D648A330050E849 /* Data Models */,
 				552AD70F1D6437F10050E849 /* AppDelegate.swift */,
-				552AD7111D6437F10050E849 /* MenuViewController.swift */,
+				552AD79B1D648B8D0050E849 /* SSASideMenu.swift */,
 				552AD7901D646CF60050E849 /* UserCell.swift */,
 				552AD78E1D6465D00050E849 /* User.swift */,
-				552AD78A1D6464B00050E849 /* AuthViewController.swift */,
 				552AD7131D6437F10050E849 /* Main.storyboard */,
-				552AD7191D6437F10050E849 /* Assets.xcassets */,
 				552AD71B1D6437F10050E849 /* LaunchScreen.storyboard */,
-				552AD71E1D6437F10050E849 /* Info.plist */,
-				552AD7281D64480F0050E849 /* GoogleService-Info.plist */,
-				552AD7161D6437F10050E849 /* ExpertRecruitSystem.xcdatamodeld */,
+				552AD7971D648A230050E849 /* sources */,
 			);
 			path = ExpertRecruitSystem;
+			sourceTree = "<group>";
+		};
+		552AD7961D6489FB0050E849 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				552AD7941D6489B80050E849 /* AdminViewController.swift */,
+				552AD7111D6437F10050E849 /* MenuViewController.swift */,
+				552AD78A1D6464B00050E849 /* AuthViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		552AD7971D648A230050E849 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				552AD7191D6437F10050E849 /* Assets.xcassets */,
+				552AD71E1D6437F10050E849 /* Info.plist */,
+				552AD7281D64480F0050E849 /* GoogleService-Info.plist */,
+			);
+			name = sources;
+			sourceTree = "<group>";
+		};
+		552AD7981D648A330050E849 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				552AD7161D6437F10050E849 /* ExpertRecruitSystem.xcdatamodeld */,
+			);
+			name = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +262,7 @@
 				552AD7911D646CF60050E849 /* UserCell.swift in Sources */,
 				552AD78F1D6465D00050E849 /* User.swift in Sources */,
 				552AD7951D6489B80050E849 /* AdminViewController.swift in Sources */,
+				552AD79C1D648B8D0050E849 /* SSASideMenu.swift in Sources */,
 				552AD7181D6437F10050E849 /* ExpertRecruitSystem.xcdatamodeld in Sources */,
 				552AD7101D6437F10050E849 /* AppDelegate.swift in Sources */,
 			);
