@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A8E627EF7042AD8DADA37F7 /* Pods_ExpertRecruitSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2624133CA386C23FB8E8430 /* Pods_ExpertRecruitSystem.framework */; };
 		552AD7101D6437F10050E849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD70F1D6437F10050E849 /* AppDelegate.swift */; };
-		552AD7121D6437F10050E849 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7111D6437F10050E849 /* ViewController.swift */; };
+		552AD7121D6437F10050E849 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7111D6437F10050E849 /* MenuViewController.swift */; };
 		552AD7151D6437F10050E849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552AD7131D6437F10050E849 /* Main.storyboard */; };
 		552AD7181D6437F10050E849 /* ExpertRecruitSystem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7161D6437F10050E849 /* ExpertRecruitSystem.xcdatamodeld */; };
 		552AD71A1D6437F10050E849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552AD7191D6437F10050E849 /* Assets.xcassets */; };
 		552AD71D1D6437F10050E849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552AD71B1D6437F10050E849 /* LaunchScreen.storyboard */; };
+		552AD7291D64480F0050E849 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 552AD7281D64480F0050E849 /* GoogleService-Info.plist */; };
+		552AD78B1D6464B00050E849 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD78A1D6464B00050E849 /* AuthViewController.swift */; };
+		552AD78F1D6465D00050E849 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD78E1D6465D00050E849 /* User.swift */; };
+		552AD7911D646CF60050E849 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7901D646CF60050E849 /* UserCell.swift */; };
+		552AD7931D6484F90050E849 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552AD7921D6484F90050E849 /* AdminViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		279C9874A502105302E02F60 /* Pods-ExpertRecruitSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpertRecruitSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExpertRecruitSystem/Pods-ExpertRecruitSystem.debug.xcconfig"; sourceTree = "<group>"; };
 		552AD70C1D6437F10050E849 /* ExpertRecruitSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpertRecruitSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		552AD70F1D6437F10050E849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		552AD7111D6437F10050E849 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		552AD7111D6437F10050E849 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		552AD7141D6437F10050E849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		552AD7171D6437F10050E849 /* ExpertRecruitSystem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExpertRecruitSystem.xcdatamodel; sourceTree = "<group>"; };
 		552AD7191D6437F10050E849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		552AD71C1D6437F10050E849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		552AD71E1D6437F10050E849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552AD7281D64480F0050E849 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		552AD78A1D6464B00050E849 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		552AD78E1D6465D00050E849 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		552AD7901D646CF60050E849 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		552AD7921D6484F90050E849 /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdminViewController.swift; path = ../AdminViewController.swift; sourceTree = "<group>"; };
+		6436439E44AF83AF1E7BF51A /* Pods-ExpertRecruitSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpertRecruitSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpertRecruitSystem/Pods-ExpertRecruitSystem.release.xcconfig"; sourceTree = "<group>"; };
+		F2624133CA386C23FB8E8430 /* Pods_ExpertRecruitSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpertRecruitSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8E627EF7042AD8DADA37F7 /* Pods_ExpertRecruitSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1708FDC2467091E04CA816A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2624133CA386C23FB8E8430 /* Pods_ExpertRecruitSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B22D2752DA188217AE1B037 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				279C9874A502105302E02F60 /* Pods-ExpertRecruitSystem.debug.xcconfig */,
+				6436439E44AF83AF1E7BF51A /* Pods-ExpertRecruitSystem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		552AD7031D6437F10050E849 = {
 			isa = PBXGroup;
 			children = (
 				552AD70E1D6437F10050E849 /* ExpertRecruitSystem */,
 				552AD70D1D6437F10050E849 /* Products */,
+				2B22D2752DA188217AE1B037 /* Pods */,
+				1708FDC2467091E04CA816A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +90,17 @@
 		552AD70E1D6437F10050E849 /* ExpertRecruitSystem */ = {
 			isa = PBXGroup;
 			children = (
+				552AD7921D6484F90050E849 /* AdminViewController.swift */,
 				552AD70F1D6437F10050E849 /* AppDelegate.swift */,
-				552AD7111D6437F10050E849 /* ViewController.swift */,
+				552AD7111D6437F10050E849 /* MenuViewController.swift */,
+				552AD7901D646CF60050E849 /* UserCell.swift */,
+				552AD78E1D6465D00050E849 /* User.swift */,
+				552AD78A1D6464B00050E849 /* AuthViewController.swift */,
 				552AD7131D6437F10050E849 /* Main.storyboard */,
 				552AD7191D6437F10050E849 /* Assets.xcassets */,
 				552AD71B1D6437F10050E849 /* LaunchScreen.storyboard */,
 				552AD71E1D6437F10050E849 /* Info.plist */,
+				552AD7281D64480F0050E849 /* GoogleService-Info.plist */,
 				552AD7161D6437F10050E849 /* ExpertRecruitSystem.xcdatamodeld */,
 			);
 			path = ExpertRecruitSystem;
@@ -74,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 552AD7211D6437F10050E849 /* Build configuration list for PBXNativeTarget "ExpertRecruitSystem" */;
 			buildPhases = (
+				D4CD3FC6850FF00230EB9382 /* [CP] Check Pods Manifest.lock */,
 				552AD7081D6437F10050E849 /* Sources */,
 				552AD7091D6437F10050E849 /* Frameworks */,
 				552AD70A1D6437F10050E849 /* Resources */,
+				FF0A7D03AC281186AC835D36 /* [CP] Embed Pods Frameworks */,
+				0DFC95ED139DD7E4B377105F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				552AD71D1D6437F10050E849 /* LaunchScreen.storyboard in Resources */,
+				552AD7291D64480F0050E849 /* GoogleService-Info.plist in Resources */,
 				552AD71A1D6437F10050E849 /* Assets.xcassets in Resources */,
 				552AD7151D6437F10050E849 /* Main.storyboard in Resources */,
 			);
@@ -134,12 +177,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DFC95ED139DD7E4B377105F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpertRecruitSystem/Pods-ExpertRecruitSystem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4CD3FC6850FF00230EB9382 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF0A7D03AC281186AC835D36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpertRecruitSystem/Pods-ExpertRecruitSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		552AD7081D6437F10050E849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552AD7121D6437F10050E849 /* ViewController.swift in Sources */,
+				552AD78B1D6464B00050E849 /* AuthViewController.swift in Sources */,
+				552AD7121D6437F10050E849 /* MenuViewController.swift in Sources */,
+				552AD7911D646CF60050E849 /* UserCell.swift in Sources */,
+				552AD78F1D6465D00050E849 /* User.swift in Sources */,
+				552AD7931D6484F90050E849 /* AdminViewController.swift in Sources */,
 				552AD7181D6437F10050E849 /* ExpertRecruitSystem.xcdatamodeld in Sources */,
 				552AD7101D6437F10050E849 /* AppDelegate.swift in Sources */,
 			);
@@ -254,29 +349,51 @@
 		};
 		552AD7221D6437F10050E849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279C9874A502105302E02F60 /* Pods-ExpertRecruitSystem.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExpertRecruitSystem",
+				);
 				INFOPLIST_FILE = ExpertRecruitSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.poodar.ExpertRecruitSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		552AD7231D6437F10050E849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6436439E44AF83AF1E7BF51A /* Pods-ExpertRecruitSystem.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExpertRecruitSystem",
+				);
 				INFOPLIST_FILE = ExpertRecruitSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.poodar.ExpertRecruitSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -299,6 +416,7 @@
 				552AD7231D6437F10050E849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

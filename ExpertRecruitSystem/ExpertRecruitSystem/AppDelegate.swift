@@ -8,16 +8,32 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseAuthUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    static var mainStoryboard: UIStoryboard {
+        return UIStoryboard(name: "Main", bundle: nil)
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        FIRApp.configure()
+        
         return true
+    }
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        let sourceApplication = options[UIApplicationOpenURLOptionsSourceApplicationKey] as! String?
+        if FIRAuthUI.authUI()?.handleOpenURL(url, sourceApplication: sourceApplication ?? "") ?? false {
+            return true
+        }
+        //other URL handling goes here.
+        return false
     }
 
     func applicationWillResignActive(application: UIApplication) {
