@@ -12,6 +12,7 @@
 @import UIKit;
 @import Firebase;
 
+
 static FMDatabase* sharedDB;
 
 @interface AppDelegate ()
@@ -29,12 +30,13 @@ static FMDatabase* sharedDB;
     NSString* doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString* dbPath = [doc stringByAppendingPathComponent:@"expert.sqlite"];
     
+    sharedDB = [FMDatabase databaseWithPath:dbPath];
+
     NSFileManager* fm = [NSFileManager defaultManager];
     if ([fm fileExistsAtPath:dbPath] == NO) {
-        sharedDB = [FMDatabase databaseWithPath:dbPath];
         
         if ([sharedDB open]) {
-            NSString* sql1 = @"create table UserInfo (UID TEXT PRIMARY KEY NOT NULL,Name TEXT NOT NULL,Sex  Text NOT NULL,Birthday Text NOT NULL,CertificateNO INT NOT NULL,CertificateDate TEXT NOT NULL,IdNo TEXT NOT NULL,Phone TEXT NOT NULL,Email TEXT NOT NULL,Address TEXT,Others TEXT, Checked INT);";
+            NSString* sql1 = @"create table UserInfo (UID TEXT PRIMARY KEY NOT NULL,Name TEXT,Sex  Text,Birthday Text,CertificateNO INT,CertificateDate TEXT,IdNo TEXT,Phone TEXT,Email TEXT NOT NULL,Address TEXT,Others TEXT, Checked INT);";
             BOOL result1 = [sharedDB executeUpdate:sql1];
             
             NSString* sql2 = @"create table Assessment (CertificateNO INT PRIMARY KEY NOT NULL,AssessmentRecord TEXT,AssessDate TEXT,AssessmentName CHAR(20),AssessmentDesc TEXT,AssessmentType INT);";

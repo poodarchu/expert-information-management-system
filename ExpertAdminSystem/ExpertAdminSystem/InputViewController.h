@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface InputViewController : UIViewController
-
+@property (nonatomic, strong) NSString* uid;
 @end

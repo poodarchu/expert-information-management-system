@@ -530,6 +530,10 @@
                     <tabBarItem key="tabBarItem" title="Item 2" id="ipf-Lw-7mH"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="emailTF" destination="1cn-CB-4ep" id="gaK-D6-0ZW"/>
+                        <outlet property="nameTF" destination="szU-qB-xqj" id="MPQ-pc-iKd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PeA-OJ-AtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

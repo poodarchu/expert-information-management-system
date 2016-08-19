@@ -48,7 +48,22 @@
             NSLog(@"%@", user.email);
             
             //在数据库中插入相应的条目
-            FMDatabase * expertDB = db;
+            NSString* doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+            NSString* dbPath = [doc stringByAppendingPathComponent:@"expert.sqlite"];
+            FMDatabase* db = [FMDatabase databaseWithPath:dbPath];
+            
+            if([db open]) {
+                NSString* sql = [NSString stringWithFormat:@"insert into UserInfo(UID, Email, Name) values (\"%@\", \"%@\", \"%@\");", user.uid, user.email, user.displayName];
+                BOOL result = [db executeUpdate:sql];
+                
+                NSString* sql2 = [NSString stringWithFormat:@"insert into Work(UID) values (\"%@\");", user.uid];
+                [db executeUpdate:sql2];
+                
+                if(result)
+                    NSLog(@"Success to insert.");
+                
+                [db close];
+            }
             
             UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             ExpertViewController* vc = [sb instantiateViewControllerWithIdentifier:@"expert"];
