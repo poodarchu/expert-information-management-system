@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
 @import FirebaseAuth;
 
 @interface ExpertViewController : UITabBarController
 @property (nonatomic, strong) FIRUser * _Nullable user;
+@property (nonatomic) Level userLevel;
 
 @end

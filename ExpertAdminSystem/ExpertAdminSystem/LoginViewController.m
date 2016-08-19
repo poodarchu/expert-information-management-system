@@ -6,14 +6,19 @@
 //  Copyright © 2016 PDC. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "AdminViewController.h"
 #import "ExpertViewController.h"
+#import "User.h"
+#import "FMDatabase.h"
 
 @import Firebase;
 @import UIKit;
 
+
 @interface LoginViewController ()
+
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *userLevel;
 @property (weak, nonatomic) IBOutlet UITextField *userNameTF;
@@ -30,10 +35,6 @@
     [super viewDidLoad];
     
     self.repasswdTF.enabled = NO;
-    
-//    self.loginBtn.enabled = (![self.userNameTF.text isEqual:@""]) && (![self.passwdTF.text isEqualToString:@""]);
-//    self.loginBtn.enabled = (![self.userNameTF.text isEqual:@""]) && (![self.passwdTF.text isEqualToString:@""]);
-
 }
 
 - (IBAction)login:(id)sender {
@@ -41,14 +42,18 @@
 
 - (IBAction)register:(id)sender {
     if (self.userLevel.selectedSegmentIndex == 0) {
-        NSLog(@" An Expert. ");
+        NSLog(@"Expert");
         
         [[FIRAuth auth] createUserWithEmail:self.userNameTF.text password:self.passwdTF.text completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
             NSLog(@"%@", user.email);
             
+            //在数据库中插入相应的条目
+            FMDatabase * expertDB = db;
+            
             UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             ExpertViewController* vc = [sb instantiateViewControllerWithIdentifier:@"expert"];
             vc.user = user;
+            vc.userLevel = kExpert;
             
             [self presentViewController:vc animated:YES completion:nil];
         }];

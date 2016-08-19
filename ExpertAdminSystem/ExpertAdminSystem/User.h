@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@import FirebaseAuth;
 
 typedef enum : NSUInteger {
     kAdmin,
@@ -15,6 +15,10 @@ typedef enum : NSUInteger {
 } Level;
 
 
-@interface User : NSObject
+@interface User : FIRUser
+
+@property (nonatomic, readwrite) Level userLevel;
+
++ (User*)userWithFIRUser:(FIRUser*)user Level:(Level)level;
 
 @end

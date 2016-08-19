@@ -8,13 +8,15 @@
 
 #import "User.h"
 
-@interface User ()
-
-@property (nonatomic, strong, readwrite) NSString* userId;
-@property (nonatomic, readwrite) Level userLevel;
-
-@end
-
 @implementation User
+
+
++ (User *)userWithFIRUser:(FIRUser *)user Level:(Level)level {
+    
+    User * u = user;
+    u.userLevel = level;
+    
+    return u;
+}
 
 @end
