@@ -78,4 +78,18 @@
     }
 }
 
+- (IBAction)signIn:(id)sender {
+    if(self.userLevel.selectedSegmentIndex == 1) {
+        [[FIRAuth auth] signInWithEmail:self.userNameTF.text password:self.passwdTF.text completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+            
+            UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            ExpertViewController* vc = [sb instantiateViewControllerWithIdentifier:@"admin"];
+            vc.user = user;
+//            vc.userLevel = kAdmin;
+            
+            [self presentViewController:vc animated:YES completion:nil];
+        }];
+    }
+    
+}
 @end

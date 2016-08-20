@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@import FirebaseAuth;
 
 @interface AdminViewController : UIViewController
 
+
+@property(nonatomic) FIRUser* user;
 @end
