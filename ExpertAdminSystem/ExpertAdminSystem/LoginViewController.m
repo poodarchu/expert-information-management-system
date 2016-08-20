@@ -53,7 +53,7 @@
             FMDatabase* db = [FMDatabase databaseWithPath:dbPath];
             
             if([db open]) {
-                NSString* sql = [NSString stringWithFormat:@"insert into UserInfo(UID, Email, Name) values (\"%@\", \"%@\", \"%@\");", user.uid, user.email, user.displayName];
+                NSString* sql = [NSString stringWithFormat:@"insert into UserInfo(UID, Email, Name, Checked) values (\"%@\", \"%@\", \"%@\", %d);", user.uid, user.email, user.displayName, 0];
                 BOOL result = [db executeUpdate:sql];
                 
                 NSString* sql2 = [NSString stringWithFormat:@"insert into Work(UID) values (\"%@\");", user.uid];

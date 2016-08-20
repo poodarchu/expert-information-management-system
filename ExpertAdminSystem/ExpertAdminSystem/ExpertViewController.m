@@ -15,5 +15,8 @@
     [super viewDidLoad];
     
     NSLog(@"%@", self.user);
+    NSLog(@"%@,,,,,,%@", self.viewControllers[0], self.viewControllers[1]);
+    
+    
 }
 @end

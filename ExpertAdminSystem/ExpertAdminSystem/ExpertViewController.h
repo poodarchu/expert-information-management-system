@@ -12,7 +12,9 @@
 @import FirebaseAuth;
 
 @interface ExpertViewController : UITabBarController
+
 @property (nonatomic, strong) FIRUser * _Nullable user;
 @property (nonatomic) Level userLevel;
+//@property (nonatomic, copy) NSString* uid;
 
 @end
